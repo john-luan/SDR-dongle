@@ -19,7 +19,7 @@ I can only do this with my spare time, so it will not be fast.
  - Using a USB-C or USB micro B connector
  - As cheap as possible, avoiding complex craft like HDI or blind hole
  - Fan out pins as many as possible
- - DDR3 clock up to 800
+ - DDR3 clock up to 1066
  - Boot by SD-Card
  - Compatible with the ADALM pluto Firmware
  - Compatible with Openwifi
@@ -31,6 +31,7 @@ I can only do this with my spare time, so it will not be fast.
  - Routing of transceiver data traces
  - ZYNQ's configuration circuits and Oscillator selection
  - Distribute transceiver's power
+ - Re-matching DDR signal net legth based on 7z020
 ...
 
 # Compromise
