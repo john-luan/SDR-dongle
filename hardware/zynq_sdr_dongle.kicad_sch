@@ -950,7 +950,7 @@
     (stroke (width 0) (type default))
     (uuid 23caa06e-72e6-4c0e-917d-a2d72537509b)
   )
-  (wire (pts (xy 259.08 101.6) (xy 251.46 101.6))
+  (wire (pts (xy 259.08 93.98) (xy 251.46 93.98))
     (stroke (width 0) (type default))
     (uuid 24de0451-f16d-43b3-bdcf-68a3ec9e333d)
   )
@@ -1006,7 +1006,7 @@
     (stroke (width 0) (type default))
     (uuid 35cb2136-47f9-492c-9f52-49782027643b)
   )
-  (wire (pts (xy 236.22 104.14) (xy 259.08 104.14))
+  (wire (pts (xy 236.22 101.6) (xy 259.08 101.6))
     (stroke (width 0) (type default))
     (uuid 3e8300e4-ce7f-41b4-b86d-5103f9766c3b)
   )
@@ -1426,7 +1426,7 @@
     (stroke (width 0) (type default))
     (uuid e7ea5e98-c82d-49ec-a0f6-be25ded031b3)
   )
-  (wire (pts (xy 251.46 101.6) (xy 251.46 74.93))
+  (wire (pts (xy 251.46 93.98) (xy 251.46 74.93))
     (stroke (width 0) (type default))
     (uuid e98f3f9d-3dd5-41a3-a45c-1b7294c43180)
   )
@@ -1470,7 +1470,7 @@
     (stroke (width 0) (type default))
     (uuid f52bda01-31f1-4d7a-a9f5-5bdfe0f7ce86)
   )
-  (wire (pts (xy 236.22 106.68) (xy 236.22 104.14))
+  (wire (pts (xy 236.22 106.68) (xy 236.22 101.6))
     (stroke (width 0) (type default))
     (uuid f5492fc4-0638-4917-9ada-25de22cbb4f8)
   )
@@ -1504,7 +1504,7 @@
     (uuid fe70b705-d574-4d79-9a2c-01c8d7062e6e)
   )
 
-  (rectangle (start 254 58.42) (end 297.18 190.5)
+  (rectangle (start 254 53.34) (end 297.18 190.5)
     (stroke (width 0.1524) (type default))
     (fill (type none))
     (uuid 0710c016-7247-42d6-bf0e-e922d6856588)
@@ -1515,6 +1515,10 @@
     (uuid c528e0a1-979f-4c41-bd85-ef6fce060073)
   )
 
+  (text "5V" (at 85.09 100.33 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 29bb8cc4-118c-48fd-8a9f-3c45547b5574)
+  )
   (text "Transceiver" (at 284.48 189.23 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4f4b555a-2dc6-4e2a-872b-c0a46bd2d203)
@@ -1526,6 +1530,10 @@
   (text "cannot fanout\nto ardruino IO\n" (at 176.53 203.2 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c9bad3ee-97ab-4dce-989b-fc740cfe2993)
+  )
+  (text "Power Status\n" (at 74.93 107.95 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e4b61afc-3800-44bc-b13b-bd452858e6b2)
   )
 
   (label "ARD_ANALOG[0..7]" (at 177.8 190.5 0) (fields_autoplaced)
@@ -2179,11 +2187,11 @@
     )
   )
 
-  (sheet (at 259.08 96.52) (size 33.02 86.36) (fields_autoplaced)
+  (sheet (at 259.08 90.17) (size 33.02 92.71) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 2e492126-6191-42ba-8e02-c3a9e141c50a)
-    (property "Sheetname" "Transceiver RF" (id 0) (at 259.08 95.8084 0)
+    (property "Sheetname" "Transceiver RF" (id 0) (at 259.08 89.4584 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
     (property "Sheetfile" "Transceiver_RF.kicad_sch" (id 1) (at 259.08 183.4646 0)
@@ -2273,24 +2281,24 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 73ee1638-dd43-43ab-8c86-8c205af60809)
     )
-    (pin "TRANS_RST" input (at 259.08 101.6 180)
+    (pin "TRANS_RST" input (at 259.08 93.98 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 91cbc022-7ddf-4c9b-823e-40e31f289755)
     )
-    (pin "LDO_EN" input (at 259.08 104.14 180)
+    (pin "LDO_EN" input (at 259.08 101.6 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 19b8f1c1-fa6c-49b3-83a6-701dfc39c882)
     )
   )
 
-  (sheet (at 259.08 63.5) (size 33.02 25.4) (fields_autoplaced)
+  (sheet (at 259.08 58.42) (size 33.02 25.4) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 639f24e7-f472-4c97-971a-e363c3f9fd3c)
-    (property "Sheetname" "Transceiver Powr" (id 0) (at 259.08 62.7884 0)
+    (property "Sheetname" "Transceiver Powr" (id 0) (at 259.08 57.7084 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "Transceiver_Power.kicad_sch" (id 1) (at 259.08 89.4846 0)
+    (property "Sheetfile" "Transceiver_Power.kicad_sch" (id 1) (at 259.08 84.4046 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
   )
@@ -3061,11 +3069,11 @@
     (path "/124a4c74-97ca-4e15-8d45-36265a6975a9/340bf51f-49c3-43ae-a555-87c05b15fa45"
       (reference "#PWR0237") (unit 1) (value "GND") (footprint "")
     )
-    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/6311da68-6122-4903-be68-cdff269f6d29"
-      (reference "#PWR0238") (unit 1) (value "GND") (footprint "")
+    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/5f5e850e-342f-41c6-81d1-bb27c4f59d7c"
+      (reference "#PWR0238") (unit 1) (value "+1V8") (footprint "")
     )
-    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/a6f39143-8618-4dc1-9481-e0a08978eabf"
-      (reference "#PWR0239") (unit 1) (value "+1V8") (footprint "")
+    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/45708189-6cf6-4828-a1a1-fe879b822edb"
+      (reference "#PWR0239") (unit 1) (value "GND") (footprint "")
     )
     (path "/639f24e7-f472-4c97-971a-e363c3f9fd3c/19b194a1-aaa8-4204-9d7a-386064fa933a"
       (reference "#PWR0240") (unit 1) (value "GND") (footprint "")
@@ -3129,6 +3137,9 @@
     )
     (path "/f2fd7566-1c55-48f1-b9cf-73bb6d17f3a6/87d5bad7-9677-46e4-90d9-9d7b66b6831a/6fffbcfc-c37e-4cdd-beb9-18060de4a5d0"
       (reference "#PWR0260") (unit 1) (value "+1V8") (footprint "")
+    )
+    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/a756a93b-d67c-4865-ac49-bf164ddfaadd"
+      (reference "#PWR0261") (unit 1) (value "GND") (footprint "")
     )
     (path "/f2fd7566-1c55-48f1-b9cf-73bb6d17f3a6/87d5bad7-9677-46e4-90d9-9d7b66b6831a/310d2724-6c6d-4c1a-b72d-1691fc5ddc1c"
       (reference "#PWR0263") (unit 1) (value "+1V8") (footprint "")
@@ -3425,10 +3436,10 @@
       (reference "C79") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/553b6258-7c38-4e45-b121-526cccdfe90b"
-      (reference "C80") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0201_0603Metric")
+      (reference "C80") (unit 1) (value "18pF") (footprint "Capacitor_SMD:C_0201_0603Metric")
     )
     (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/6bf1253c-6fc3-41c7-a0af-e49db97f2dde"
-      (reference "C81") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0201_0603Metric")
+      (reference "C81") (unit 1) (value "18pF") (footprint "Capacitor_SMD:C_0201_0603Metric")
     )
     (path "/639f24e7-f472-4c97-971a-e363c3f9fd3c/0c4ebf32-1ee5-47da-9663-10130c1af94b"
       (reference "C82") (unit 1) (value "NFM15PC146R0G3D") (footprint "Capacitor_SMD_Local:C_0402_1005Metric")
@@ -3724,6 +3735,9 @@
     (path "/124a4c74-97ca-4e15-8d45-36265a6975a9/867991ab-206d-41eb-9073-0a3ad5169a93"
       (reference "J13") (unit 1) (value "Conn_01x04_Male") (footprint "Connector_Local:BM03B-ACHSS-GAN-TF")
     )
+    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/5595eeb4-f057-40f7-9141-b39aabd80bc8"
+      (reference "J14") (unit 1) (value "Conn_01x01") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
+    )
     (path "/048e1ae9-e0b6-40ad-ad10-0b910f122731/c3571cb6-3ddd-4074-ae5a-0b38e284b57b"
       (reference "L1") (unit 1) (value "DFE18SANR47MG0") (footprint "Inductor_SMD:L_Murata_LQH2MCNxxxx02_2.0x1.6mm")
     )
@@ -3952,6 +3966,12 @@
     (path "/f2fd7566-1c55-48f1-b9cf-73bb6d17f3a6/87d5bad7-9677-46e4-90d9-9d7b66b6831a/9f1e603b-261c-4854-8d7e-3e2a53518417"
       (reference "R66") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0201_0603Metric")
     )
+    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/84159df1-2a43-4894-9f71-67dad2a59905"
+      (reference "R67") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
+    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/727fbeee-a3d1-4c3d-82c0-90bdfeae389e"
+      (reference "R68") (unit 1) (value "N/A") (footprint "Resistor_SMD:R_0201_0603Metric")
+    )
     (path "/f2fd7566-1c55-48f1-b9cf-73bb6d17f3a6/87d5bad7-9677-46e4-90d9-9d7b66b6831a/18a63771-9e2a-4028-b4a2-e050470b986b"
       (reference "SW2") (unit 1) (value "SW_DIP_x01") (footprint "Switcher:EVQ9P701P")
     )
@@ -4012,9 +4032,6 @@
     (path "/124a4c74-97ca-4e15-8d45-36265a6975a9/53770576-d6e5-497f-bfc6-bec7dbeea3a5"
       (reference "U11") (unit 1) (value "TPS2121") (footprint "Capacitor_SMD_Local:VQFN-12_2p0_2p5_0p5")
     )
-    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/05d6223a-0f74-4fb5-b20d-72b54a079563"
-      (reference "U12") (unit 1) (value "Si513A_2.5x3.2mm") (footprint "Oscillator:Oscillator_SMD_Silicon_Labs_LGA-6_2.5x3.2mm_P1.25mm")
-    )
     (path "/f2fd7566-1c55-48f1-b9cf-73bb6d17f3a6/87d5bad7-9677-46e4-90d9-9d7b66b6831a/5886c2df-6286-440b-8e47-50ca1422d30b"
       (reference "U13") (unit 1) (value "TXS0206A") (footprint "Package_CSP_Local:WLCSP-20_1.609x1.994mm_Layout4x5_P0.4mm")
     )
@@ -4022,7 +4039,10 @@
       (reference "X1") (unit 1) (value "SiT1602B") (footprint "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm")
     )
     (path "/f2fd7566-1c55-48f1-b9cf-73bb6d17f3a6/87d5bad7-9677-46e4-90d9-9d7b66b6831a/eae31dc2-663f-4ce4-9f3f-5fe5974a5281"
-      (reference "X2") (unit 1) (value "ECS-2520MV-xxx-xx") (footprint "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm")
+      (reference "X2") (unit 1) (value "SiT1602B") (footprint "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm")
+    )
+    (path "/2e492126-6191-42ba-8e02-c3a9e141c50a/3bb8fbe4-dbc8-4f72-9892-82c13f0e0c73"
+      (reference "X3") (unit 1) (value "SiT1602B") (footprint "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm")
     )
   )
 )
