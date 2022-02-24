@@ -2193,9 +2193,17 @@
     (uuid fff77626-e2a2-4ed6-bd14-7dceae3db500)
   )
 
+  (text "external voltage reference" (at 207.01 115.57 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 0a9bdd5f-8abc-4690-9b9a-d1fc85262e44)
+  )
   (text "Not Use" (at 147.32 86.36 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 903a055d-43cd-4801-9c70-c52670c2711c)
+  )
+  (text "priority supervisor" (at 207.01 96.52 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid d4b9480e-c619-4029-ac7d-63138394f69f)
   )
 
   (label "PS_MIO_501_USB0_D6" (at 271.78 193.04 0) (fields_autoplaced)
